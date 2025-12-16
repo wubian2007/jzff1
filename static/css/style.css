@@ -639,7 +639,7 @@ ul {
 
 .advantages-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
     margin-top: 3rem;
 }
@@ -898,9 +898,13 @@ ul {
         font-size: 2rem;
     }
 
-    .services-grid,
-    .advantages-grid {
+    .services-grid {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .advantages-grid {
+        grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
     }
 
