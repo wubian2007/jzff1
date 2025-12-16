@@ -1,0 +1,22 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: juzi-fenfa
+    ports:
+      - "8080:8080"
+    volumes:
+      # 开发时挂载代码目录，方便热更新
+      - ./templates:/root/templates
+      - ./static:/root/static
+    restart: unless-stopped
+    environment:
+      - GIN_MODE=release
+    networks:
+      - juzi-network
+
+networks:
+  juzi-network:
+    driver: bridge
+

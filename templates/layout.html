@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{if .title}}{{.title}}{{else}}桔子分发 - 专业的应用分发平台{{end}}</title>
+    <meta name="description" content="桔子分发 - 专业的应用分发平台，提供APP分发、WEB封装、内测分发等服务">
+    <link rel="stylesheet" href="/static/css/style.css">
+    {{block "head" .}}{{end}}
+</head>
+<body>
+    {{block "header" .}}
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="/">桔子分发</a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="/">首页</a></li>
+                    <li class="nav-dropdown">
+                        <a href="https://www.appzhu.cn/" target="_blank">内测分发 <span class="dropdown-arrow">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://www.appzhu.cn/" target="_blank">应用分发</a></li>
+                            <li><a href="https://www.appzhu.cn/" target="_blank">文件快传</a></li>
+                            <li><a href="https://www.appzhu.cn/" target="_blank">WEB封装</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-dropdown">
+                        <a href="https://www.appzhu.cn/" target="_blank">开发者中心 <span class="dropdown-arrow">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://www.appzhu.cn/" target="_blank">提取UDID</a></li>
+                            <li><a href="https://www.appzhu.cn/" target="_blank">Plist文件制作</a></li>
+                            <li><a href="https://www.appzhu.cn/" target="_blank">图标在线制作</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://www.appzhu.cn/" target="_blank">价格套餐</a></li>
+                    <li><a href="https://www.appzhu.cn/" target="_blank">加盟推广</a></li>
+                    <li><a href="https://www.appzhu.cn/" target="_blank">帮助和文档</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="https://www.appzhu.cn/" target="_blank" class="btn btn-outline">注册</a>
+                    <a href="https://www.appzhu.cn/" target="_blank" class="btn btn-primary">登录</a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="菜单">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+    {{end}}
+
+    <main class="main">
+        {{block "content" .}}{{end}}
+    </main>
+
+    {{block "footer" .}}
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>产品服务</h4>
+                    <ul>
+                        <li><a href="https://www.appzhu.cn/" target="_blank">内测分发</a></li>
+                        <li><a href="https://www.appzhu.cn/" target="_blank">WEB封装</a></li>
+                        <li><a href="https://www.appzhu.cn/" target="_blank">超级签名</a></li>
+                        <li><a href="https://www.appzhu.cn/" target="_blank">企业签名</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>关于我们</h4>
+                    <ul>
+                        <li><a href="https://www.appzhu.cn/" target="_blank">公司简介</a></li>
+                        <li><a href="https://www.appzhu.cn/" target="_blank">隐私政策</a></li>
+                        <li><a href="https://www.appzhu.cn/" target="_blank">服务协议</a></li>
+                        <li><a href="https://www.appzhu.cn/" target="_blank">应用审核规范</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>帮助中心</h4>
+                    <ul>
+                        <li><a href="https://www.appzhu.cn/" target="_blank">建议和反馈</a></li>
+                        <li><a href="https://www.appzhu.cn/" target="_blank">常见问题</a></li>
+                        <li><a href="https://www.appzhu.cn/" target="_blank">行业动态</a></li>
+                        <li><a href="https://www.appzhu.cn/" target="_blank">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact-info">
+                    <h4>联系我们</h4>
+                    <p>公司：河北桔子分发科技</p>
+                    <p>客服：2238038487</p>
+                    <p>邮箱：880880@qq.com</p>
+                    <p>合作邮箱：880880@qq.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 桔子分发. All rights reserved. 长沙静腾教育咨询有限公司河北分公司 <a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow">琼ICP备2025055238号</a></p>
+            </div>
+        </div>
+    </footer>
+    {{end}}
+
+    <script src="/static/js/main.js"></script>
+    {{block "scripts" .}}{{end}}
+</body>
+</html>
